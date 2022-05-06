@@ -1,0 +1,26 @@
+.game-options {
+  padding: 0.5rem;
+  border: 1px solid grey;
+  outline: none !important;
+}
+
+.game-field {
+  margin-top: 1rem;
+}
+
+.game-board {
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.cell {
+  border: 1px solid grey;
+  width: 2rem;
+  height: 2rem;
+  background-color: white;
+  cursor: pointer;
+}
+
+.cell-blue {
+  background-color: blue;
+}
