@@ -50,7 +50,7 @@ const GameComponent:React.FC = () => {
                         setSelectedField(parseInt(e.target.value))
                     }} className='game-options'>
             <option value={0}> -- Default -- </option>
-            {fields.map((field) => {
+            {fields.map((field, key) => {
                 return (
                   <option value={field.field} >  
                     {field.name} ({field.field}x{field.field})  
@@ -64,8 +64,8 @@ const GameComponent:React.FC = () => {
           </div>
         </div>
         <div className="game-board">
-            {array.map((el: number) => {
-                var second = array.map((el: number) => {
+            {array.map((el: number, key: number) => {
+                var second = array.map((el: number, key: number) => {
                     return (
                         <div onMouseEnter={(e)=>{changeColor(e.target)}} className="cell"></div>
                     )
