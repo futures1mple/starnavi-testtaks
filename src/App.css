@@ -11,6 +11,7 @@
 .game-board {
   margin-top: 1rem;
   flex-wrap: wrap;
+  width: fit-content;
 }
 
 .cell {
@@ -23,4 +24,12 @@
 
 .cell-blue {
   background-color: blue;
+}
+
+
+.hovered-btn {
+  background-color:blanchedalmond;
+  color: brown;
+  width: fit-content;
+  height: fit-content;
 }
